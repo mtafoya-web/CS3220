@@ -16,31 +16,66 @@
 </head>
 
 <body>
-    <header class="container-fluid bg-primary-custom text-white p-0">
-        <div class="row align-content-center justify-content-center m-0">
-            <img src="./clapperboard-64x64.png" alt="Film logo" class="mr-2">
-            <h1>Retro Video Rentals</h1>
-        </div>
+    <!--Header: Navbar_col [logo+title+toggle][navbar links]-->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-primary-custom mb-2 flex-column" id="mainNavbar">
+        <!-- IMG + Header + toggle -->
+        <div class="d-flex align-items-center justify-content-center w-100">
+            <!-- Logo and title -->
+            <div class="d-flex align-items-center flex-nowrap">
+                <img src="./clapperboard-64x64.png" alt="Film logo" class="mr-2">
+                <h1 class="h1 mb-0 text-white">Retro Video Rentals</h1>
+            </div>
 
-        <nav class="navbar">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavbar">
+            <!-- Phone toggle button -->
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarLinks"
+                aria-controls="navbarLinks" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+        </div>
 
-            <nav class="collapse navbar-collapse d-flex align-items-center justify-content-center" id="mainNavbar">
-                <div class="nav-item"><a class="nav-link" href="#"><i class="fa-solid fa-home"></i><span
-                            class="d-none d-md-inline">Home</span></a></div>
-                <div class="nav-item"><a class="nav-link" href="#"><i class="fa-solid fa-film"></i><span
-                            class="d-none d-md-inline">Movies</span></a></div>
-                <div class="nav-item"><a class="nav-link" href="#"><i class="fa-solid fa-users"></i><span
-                            class="d-none d-md-inline">Customers</span></a></div>
-                <div class="nav-item"><a class="nav-link" href="#"><i class="fa-solid fa-calendar-check"></i><span
-                            class="d-none d-md-inline">Contact</span></a></div>
-            </nav>
-        </nav>
+        <!-- Collapsible navbar links -->
+        <div class="collapse navbar-collapse w-100 mt-2 mt-sm-0" id="navbarLinks">
+            <div class="navbar-nav w-100">
 
+                <div class="nav-item d-flex align-items-center justify-content-center flex-fill">
+                    <i class="fa-solid fa-home mr-2 text-white"></i>
+                    <a class="nav-link text-white p-0" href="#">Home</a>
+                </div>
 
-    </header>
+                <div class="nav-item d-flex align-items-center justify-content-center flex-fill">
+                    <i class="fa-solid fa-film mr-2 text-white"></i>
+                    <a class="nav-link text-white p-0" href="#">Movies</a>
+                </div>
+
+                <div class="nav-item d-flex align-items-center justify-content-center flex-fill">
+                    <i class="fa-solid fa-users mr-2 text-white"></i>
+                    <a class="nav-link text-white p-0" href="#">Customers</a>
+                </div>
+
+                <div class="nav-item d-flex align-items-center justify-content-center flex-fill">
+                    <i class="fa-solid fa-calendar-check mr-2 text-white"></i>
+                    <a class="nav-link text-white p-0" href="#">Contact</a>
+                </div>
+
+            </div>
+        </div>
+
+    </nav>
+
+    <!--Main page Contents -->
+    <main>
+
+    </main>
+
+    <!--footer-->
+    <footer class="bg-dark-custom text-white text-center p-3 w-100">
+        <p class="mb-0">
+            Copyright &copy; Retro Movie Rentals 2026<br>
+            Movie icon created by <a href="https://www.flaticon.com/authors/freepik"><u>Freepik</u></a>
+            from <a href="https://www.flaticon.com/"><u>Flaticon</u></a>
+        </p>
+    </footer>
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
