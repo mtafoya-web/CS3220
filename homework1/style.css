@@ -1,3 +1,7 @@
 .bg-primary-custom{
     background-color: darkblue;
 }
+
+.toggle-custom{
+    right: 15px;
+}

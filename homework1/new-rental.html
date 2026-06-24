@@ -16,11 +16,17 @@
 <body class="m-0">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-    <!-- NavBar Bootstrap-->
-    <div
-        class="container-fluid container-lg-12 bg-primary-custom text-white d-flex align-items-center justify-content-center p-0">
+    <!-- Top Header Bootstrap-->
+    <div class="container-fluid bg-primary-custom text-white p-0 position-relative">
         <img src="./clapperboard-64x64.png" alt="Logo">
         <h1>Retro Video Rentals</h1>
+
+        <!--small screen dropdown-->
+        <div class="dropdown d-md-none position-absolute toggle-custom">
+            <button class="btn btn-light dropdown-toggle" type="button" id="mobileMenu" data-toggle="dropdown">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
     </div>
     <!-- Content Block -->
     <div class="container-fluid p-0 flex-grow-1">
@@ -28,7 +34,7 @@
         <div class="row m-0">
             <!--col1-->
             <ul
-                class="nav bg-primary-custom text-white d-flex flex-column align-items-center justify-content-start m-0 col-sm-2 vh-100">
+                class="nav bg-primary-custom text-white d-none d-md-flex flex-column align-items-center justify-content-start m-0 col-sm-2 vh-100">
                 <li class="nav-item">
                     <a class="nav-link text-white" href="#">
                         <i class="fa-solid fa-house mr-2"></i>
@@ -36,7 +42,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link href=" ./Movies.html">
+                    <a class=""nav-link href="#" ./Movies.html">
                         <i class="fa-solid fa-film mr-2"></i>
                         <span class="d-none d-md-inline">Movies</span>
                     </a>
@@ -56,6 +62,7 @@
 
             </ul>
             <!--col2-->
+            
             
         </div>
     </div>
