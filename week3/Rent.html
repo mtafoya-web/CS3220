@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Retro Video Rentals</title>
+    <link rel="stylesheet" type="text/css" href="RetroVideo.css">
+</head>
+
+<body>
+    <div class="page">
+        <div class="header">
+            <h1><img src="./clapperboard-64x64.png" alt="Logo" height="32" align="center" hspace="10">Retro Video
+                Rentals</h1>
+        </div>
+
+        <div class="main-area">
+            <div class="menu">
+                <div class="nav-container">
+                    <ul>
+                        <li><a href="./">Home</a></li>
+                        <li><a href="./Movies.html">Movies</a></li>
+                        <li><a href="./Rent.html">Rent a Movie</a></li>
+                        <li><a href="#">Customers</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="content">
+                <h2 class="grid-rental"><b>Rent a Movie</b></h2>
+                <form class="grid-rental">
+                    <label for="Customer">Customer Name: </label>
+                    <input type="text" id="Customer" name="Customer">
+                    <br><br>
+                    <label for="Email">Email:</label>
+                    <input type="text" id="Email" name="Email">
+                    <br><br>
+                    <label for="Movie">Movie:</label>
+                    <select id="Movie" name="Movie">
+                        <option>The Last Mission</option>
+                        <option>Laugh Out Loud</option>
+                        <option>A Quiet Road</option>
+                        <option>Space Friends</option>
+                    </select>
+                    <br><br>
+                    <label for="Duration">Rental Duration:</label>
+                    <select id="Duration">
+                        <option>1 Day</option>
+                        <option>3 Days</option>
+                        <option>5 Days</option>
+                        <option>7 Days</option>
+                    </select>
+                    <br><br>
+                    <label for="Pickup">Pickup Date:</label>
+                    <input type="date" id="Pickup" name="Pickup">
+                    <br><br>
+                    <label>Membership:</label>
+                    <input type="checkbox" id="Membership" name="Membership">
+                    <label for="Membership">I am an active member</label>
+                    <br><br>
+                    <button type="submit">Request Rental</button>
+
+
+                </form>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>
+                Copyright &copy; Retro Video Rentals 2026<br>
+                Movie icon created by <a href="https://www.flaticon.com/authors/freepik"><u>Freepik</u></a>
+                from <a href="https://www.flaticon.com/"><u>Flaticon</u></a>
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>

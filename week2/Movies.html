@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Retro Video Rentals</title>
+    <link rel="stylesheet" type="text/css" href="RetroVideo.css">
+</head>
+
+<body>
+    <div class="body">
+        <div class="header">
+            <h1><img src="./clapperboard-64x64.png" alt="Logo" height="32" align="center" hspace="10">Retro Video
+                Rentals</h1>
+        </div>
+
+        <div class="nav-container">
+            <a href="./Movies.html">Movies</a>
+            <a>|</a>
+            <a href="./Rent.html">Rent a Movie</a>
+            <a>|</a>
+            <a href="#">Contact</a>
+        </div>
+
+        <div class="table-container">
+        <h2><b>Movies</b></h2>
+        <form>
+            <label for="category">Category</label>
+            <select name="category" id="category">
+                <option value="All Movies">All Movies</option>
+                <option value="Action">Action</option>
+                <option value="Comedy">Comedy</option>
+                <option value="Drama">Drama</option>
+                <option value="Family">Family</option>
+            </select>
+
+            <button type="submit">Select</button>
+        </form>
+        
+        <table class="tb-movies">
+            <!-- Header Row -->
+            <thead>
+                <tr>
+                    <th>Movie Title</th>
+                    <th>Category</th>
+                    <th>Rating</th>
+                    <th>Rental Price</th>
+                    <th>Available Copies</th>
+                </tr>
+            </thead>
+            <!-- row1 -->
+            <tbody>
+                <tr>
+                    <td>The Last Mission</td>
+                    <td>Action</td>
+                    <td>PG-13</td>
+                    <td>$3.99</td>
+                    <td>4</td>
+                </tr>
+                <!-- row2-->
+                <tr>
+                    <td>Laugh Out Loud</td>
+                    <td>Comedy</td>
+                    <td>PG</td>
+                    <td>$2.99</td>
+                    <td>2</td>
+                </tr>
+                <!-- row3 -->
+                <tr>
+                    <td>A Quiet Road</td>
+                    <td>Drama</td>
+                    <td>PG-13</td>
+                    <td>$3.49</td>
+                    <td>3</td>
+                </tr>
+                <!-- row4 -->
+                <tr>
+                    <td>Space Friends</td>
+                    <td>Family</td>
+                    <td>G</td>
+                    <td>$2.99</td>
+                    <td>5</td>
+                </tr>
+            </tbody>
+        </table>
+        </div>
+
+        <div class="footer">
+            <p>
+                Copright &copy; Retro Video Rentals 2026 <br/>
+                All right reserved Mario Tafoya.
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,267 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    min-height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: white;
+}
+
+.page {
+    min-height: 100vh;
+    background-color: white;
+    color: black;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+
+    background-color: darkblue;
+    color: white;
+    padding: 15px 20px 15px;
+}
+
+.header img {
+    width: 80px;
+    height: auto;
+    vertical-align: middle;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 60px;
+}
+
+.main-area {
+    margin: 0px;
+    flex: 1;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+}
+
+.menu {
+    margin-right: 1px;
+    width: 220px;
+    flex-shrink: 0;
+    display: flex;
+    background-color: darkblue;
+    color: white;
+}
+
+.content {
+    flex: 3;
+
+}
+
+.content-block {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.content-block h2 {
+    background-color: aqua;
+    border: 5px solid gold;
+    padding: 10px 10px;
+}
+
+.rent-btn {
+    color: white;
+    background-color: green;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 6px;
+
+}
+
+.nav-container {
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+    width: 100%;
+}
+
+
+.nav-container ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.nav-container a {
+    color: white;
+    text-decoration: underline;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.nav-container a:hover {
+    color: gold;
+}
+
+
+
+/* Table wrapper div */
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.tb-movies {
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    width: 100%;
+    font-size: 0.75rem;
+    margin-bottom: 60px;
+    margin-top: 15px;
+    margin-bottom: 100px;
+}
+
+.tb-movies th,
+.tb-movies td {
+    border: 1px solid black;
+    padding: 12px;
+}
+
+.tb-movies thead {
+    background-color: #d8e2ec;
+    font-weight: bold;
+}
+
+.grid-rental {
+    padding-bottom: 20px;
+}
+
+.grid-rental label {
+    display: inline-block;
+    width: 220px;
+    font-weight: bold;
+}
+
+.grid-rental input,
+.grid-rental select {
+    vertical-align: middle;
+    padding: 6px;
+}
+
+.grid-rental button {
+    margin-left: 220px;
+    padding: 10px;
+    font-size: 16px;
+    color: white;
+    background-color: #2f3fc9;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 18px 10px;
+    margin-top: auto;
+}
+
+/* Smaller screen layout */
+@media screen and (max-width: 600px) {
+    .header {
+        text-align: center;
+        gap: 10px;
+        padding: 15px 10px 10px;
+    }
+
+    .header img {
+        width: 60px;
+    }
+
+    .header h1 {
+        font-size: 2.2rem;
+    }
+
+    .nav-container {
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px 20px 20px;
+    }
+
+    .nav-container a {
+        font-size: 1.3rem;
+    }
+
+    .nav-container a:nth-child(2),
+    .nav-container a:nth-child(4) {
+        display: none;
+    }
+
+    .content {
+        padding: 15px;
+    }
+
+    .content h1,
+    .content h2 {
+        font-size: 2rem;
+    }
+
+    .grid-rental label {
+        display: block;
+        width: auto;
+        margin-bottom: 5px;
+    }
+
+    .grid-rental input,
+    .grid-rental select {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .grid-rental input[type="checkbox"] {
+        width: auto;
+    }
+
+    .grid-rental input[type="checkbox"]+label {
+        display: inline-block;
+        width: auto;
+        margin-left: 5px;
+    }
+
+    .grid-rental button {
+        margin-left: 0;
+        width: 100%;
+        max-width: 350px;
+        font-size: 1rem;
+    }
+
+    .tb-movies {
+        font-size: 0.9rem;
+        margin-bottom: 60px;
+    }
+
+    .tb-movies th,
+    .tb-movies td {
+        padding: 8px;
+    }
+
+    .footer {
+        font-size: 1rem;
+        padding: 18px 10px;
+    }
+}
