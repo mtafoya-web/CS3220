@@ -6,6 +6,9 @@ body{
     display: flex;
     flex-direction: column;
 }
+main {
+    flex: 1;
+}
 .bg-primary-custom{
     background-color: darkblue;
 }
@@ -14,22 +17,41 @@ body{
     background-color: black;
 }
 
-main {
-    flex: 1;
+.bg-aqua-custom {
+    background-color: aqua;
+    border: 5px solid gold;
+}
+
+.promo-card {
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 5px;
+}
+
+.bg-new-releases {
+    background-color: #eaf3ff;
+    border-color: #8bbcff;
+}
+
+.bg-classic-movies {
+    background-color: #eefbea;
+    border-color: #9bd48d;
+}
+
+.bg-family-night {
+    background-color: #fff5dc;
+    border-color: #ffc966;
+}
+
+.bg-late-fee {
+    background-color: #ffeaf2;
+    border-color: #ff9ec2;
 }
 
 #mainNavbar .nav-link {
     border-bottom: 2px solid transparent;
     transition: border-color .2s;
 }
-#mainNavbar span{
-    color: white;
-}
-
-i {
-    color: white;
-}
-
 #mainNavbar .nav-link:hover,
 #mainNavbar .nav-link.active {
     color: white;

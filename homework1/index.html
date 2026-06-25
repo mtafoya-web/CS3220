@@ -15,56 +15,99 @@
     </title>
 </head>
 
-<body>
+<body class="font-weight-bold">
     <!--Header: Navbar_col [logo+title+toggle][navbar links]-->
     <nav class="navbar navbar-expand-sm navbar-dark bg-primary-custom mb-2 flex-column" id="mainNavbar">
-        <!-- IMG + Header + toggle -->
         <div class="d-flex align-items-center justify-content-center w-100">
-            <!-- Logo and title -->
-            <div class="d-flex align-items-center flex-nowrap">
+            <a class="navbar-brand d-flex align-items-center mb-0" href="index.html">
                 <img src="./clapperboard-64x64.png" alt="Film logo" class="mr-2">
-                <h1 class="h1 mb-0 text-white">Retro Video Rentals</h1>
-            </div>
+                <span class="h1 mb-0 text-white">Retro Video Rentals</span>
+            </a>
 
-            <!-- Phone toggle button -->
             <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarLinks"
                 aria-controls="navbarLinks" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
         </div>
 
-        <!-- Collapsible navbar links -->
         <div class="collapse navbar-collapse w-100 mt-2 mt-sm-0" id="navbarLinks">
-            <div class="navbar-nav w-100">
-
-                <div class="nav-item d-flex align-items-center justify-content-center flex-fill">
-                    <i class="fa-solid fa-home mr-2 text-white"></i>
-                    <a class="nav-link text-white p-0" href="#">Home</a>
-                </div>
-
-                <div class="nav-item d-flex align-items-center justify-content-center flex-fill">
-                    <i class="fa-solid fa-film mr-2 text-white"></i>
-                    <a class="nav-link text-white p-0" href="#">Movies</a>
-                </div>
-
-                <div class="nav-item d-flex align-items-center justify-content-center flex-fill">
-                    <i class="fa-solid fa-users mr-2 text-white"></i>
-                    <a class="nav-link text-white p-0" href="#">Customers</a>
-                </div>
-
-                <div class="nav-item d-flex align-items-center justify-content-center flex-fill">
-                    <i class="fa-solid fa-calendar-check mr-2 text-white"></i>
-                    <a class="nav-link text-white p-0" href="#">Contact</a>
-                </div>
-
-            </div>
+            <ul class="navbar-nav w-100 justify-content-around text-center">
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="index.html"><i class="fa-solid fa-home mr-2"></i>Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="Movies.html"><i class="fa-solid fa-film mr-2"></i>Movies</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="customers.html"><i class="fa-solid fa-users mr-2"></i>Customers</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="rentals.html"><i class="fa-solid fa-calendar-check mr-2"></i>Rentals</a>
+                </li>
+            </ul>
         </div>
 
     </nav>
 
     <!--Main page Contents -->
-    <main>
+    <main class="container-fluid px-4 my-0 d-flex flex-column flex-grow-1">
+        <div class="row my-2">
+            <div class="col">
+                <h2 class="bg-aqua-custom text-center p-2"><b>2026 Movie Rentals</b></h2>
+            </div>
+        </div>
 
+        <div class="row align-items-stretch">
+            <div class="col-12 col-sm-6 col-md-3 mb-3 d-flex">
+                <div class="card text-center bg-new-releases promo-card h-100 w-100">
+                    <i class="fa-solid fa-star text-primary fa-2x mt-3"></i>
+                    <div class="card-body">
+                        <h2 class="card-title">New Releases</h2>
+                        <p class="card-text text-danger font-weight-bold mb-0">$4.99</p>
+                        <p class="card-text mb-0">per rental</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3 mb-3 d-flex">
+                <div class="card text-center bg-classic-movies promo-card h-100 w-100">
+                    <i class="fa-solid fa-clapperboard fa-2x mt-3"></i>
+                    <div class="card-body">
+                        <h2 class="card-title">Classic Movies</h2>
+                        <p class="card-text text-danger font-weight-bold mb-0">$2.99</p>
+                        <p class="card-text mb-0">per rental</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3 mb-3 d-flex">
+                <div class="card text-center bg-family-night promo-card h-100 w-100">
+                    <i class="fa-solid fa-users fa-2x mt-3"></i>
+                    <div class="card-body">
+                        <h2 class="card-title">Family Night Bundle</h2>
+                        <p class="card-text mb-0">3 movies for</p>
+                        <p class="card-text text-danger font-weight-bold mb-0">$7.99</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3 mb-3 d-flex">
+                <div class="card text-center bg-late-fee promo-card h-100 w-100">
+                    <i class="fa-solid fa-clock fa-2x mt-3"></i>
+                    <div class="card-body">
+                        <h2 class="card-title">Late Fee</h2>
+                        <p class="card-text text-danger font-weight-bold mb-0">$1.00</p>
+                        <p class="card-text mb-0">per day</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-4 pb-3">
+            <div class="col text-center">
+                <button type="button" class="btn btn-success btn-lg px-5 py-3 h4 mb-0">
+                    <i class="fa-solid fa-ticket"></i>
+                    Rent now
+                </button>
+            </div>
+        </div>
     </main>
 
     <!--footer-->
