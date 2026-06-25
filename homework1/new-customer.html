@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
     <meta charset="UTF-8">
@@ -10,55 +10,198 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="./style.css">
 
-    <title>Retro Video Rentals</title>
+    <title>
+        Home Page
+    </title>
 </head>
 
-<body class="m-0">
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-    <!-- NavBar Bootstrap-->
-    <div
-        class="container-fluid container-lg-12 bg-primary-custom text-white d-flex align-items-center justify-content-center p-0">
-        <img src="./clapperboard-64x64.png" alt="Logo">
-        <h1>Retro Video Rentals</h1>
-    </div>
-    <!-- Content Block -->
-    <div class="container-fluid p-0 flex-grow-1">
-        <!-- row1-->
-        <div class="row m-0">
-            <!--col1-->
-            <ul
-                class="nav bg-primary-custom text-white d-flex flex-column align-items-center justify-content-start m-0 col-sm-2 vh-100">
-                <li class="nav-item">
-                    <a class="nav-link text-white" href="#">
-                        <i class="fa-solid fa-house mr-2"></i>
-                        <span class="d-none d-md-inline">Home</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link href=" ./Movies.html">
-                        <i class="fa-solid fa-film mr-2"></i>
-                        <span class="d-none d-md-inline">Movies</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">
-                        <i class="fa-solid fa-users mr-2"></i>
-                        <span class="d-none d-md-inline">Customers</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">
-                        <i class="fa-solid fa-calendar-check mr-2"></i>
-                        <span class="d-none d-md-inline">Contact</span>
-                    </a>
-                </li>
+<body class="font-weight-bold">
+    <!--Header: Navbar_col [logo+title+toggle][navbar links]-->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-primary-custom mb-2 flex-column" id="mainNavbar">
+        <div class="d-flex align-items-center justify-content-center w-100">
+            <a class="navbar-brand d-flex align-items-center mb-0" href="index.html">
+                <img src="./clapperboard-64x64.png" alt="Film logo" class="mr-2">
+                <span class="h1 mb-0 text-white">Retro Video Rentals</span>
+            </a>
 
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarLinks"
+                aria-controls="navbarLinks" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+
+        <div class="collapse navbar-collapse w-100 mt-2 mt-sm-0" id="navbarLinks">
+            <ul class="navbar-nav w-100 justify-content-around text-center">
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="index.html"><i class="fa-solid fa-home mr-2"></i>Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="Movies.html"><i class="fa-solid fa-film mr-2"></i>Movies</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="customers.html"><i class="fa-solid fa-users mr-2"></i>Customers</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="rentals.html"><i class="fa-solid fa-calendar-check mr-2"></i>Rentals</a>
+                </li>
             </ul>
-            <!--col2-->
+        </div>
+
+    </nav>
+
+    <!--Main page Contents -->
+    <main class="container-fluid px-4 my-0 d-flex flex-column flex-grow-1">
+        <div class="row my-2">
+            <div class="col">
+                <h2 class="bg-aqua-custom text-center p-2"><b>2026 Movie Rentals</b></h2>
+            </div>
+        </div>
+
+        <div class="row align-items-stretch">
+            <div class="col-12 col-sm-6 col-md-3 mb-3 d-flex">
+                <div class="card text-center bg-new-releases promo-card h-100 w-100">
+                    <i class="fa-solid fa-star text-primary fa-2x mt-3"></i>
+                    <div class="card-body">
+                        <h2 class="card-title">New Releases</h2>
+                        <p class="card-text text-danger font-weight-bold mb-0">$4.99</p>
+                        <p class="card-text mb-0">per rental</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3 mb-3 d-flex">
+                <div class="card text-center bg-classic-movies promo-card h-100 w-100">
+                    <i class="fa-solid fa-clapperboard fa-2x mt-3"></i>
+                    <div class="card-body">
+                        <h2 class="card-title">Classic Movies</h2>
+                        <p class="card-text text-danger font-weight-bold mb-0">$2.99</p>
+                        <p class="card-text mb-0">per rental</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3 mb-3 d-flex">
+                <div class="card text-center bg-family-night promo-card h-100 w-100">
+                    <i class="fa-solid fa-users fa-2x mt-3"></i>
+                    <div class="card-body">
+                        <h2 class="card-title">Family Night Bundle</h2>
+                        <p class="card-text mb-0">3 movies for</p>
+                        <p class="card-text text-danger font-weight-bold mb-0">$7.99</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3 mb-3 d-flex">
+                <div class="card text-center bg-late-fee promo-card h-100 w-100">
+                    <i class="fa-solid fa-clock fa-2x mt-3"></i>
+                    <div class="card-body">
+                        <h2 class="card-title">Late Fee</h2>
+                        <p class="card-text text-danger font-weight-bold mb-0">$1.00</p>
+                        <p class="card-text mb-0">per day</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-4 pb-3">
+            <div class="col text-center">
+                <button type="button" class="btn btn-success btn-lg px-5 py-3 h4 mb-0">
+                    <i class="fa-solid fa-ticket"></i>
+                    Rent now
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <!--footer-->
+    <footer class="bg-dark-custom text-white text-center p-3 w-100">
+        <p class="mb-0">
+            Copyright &copy; Retro Movie Rentals 2026<br>
+            Movie icon created by <a href="https://www.flaticon.com/authors/freepik"><u>Freepik</u></a>
+            from <a href="https://www.flaticon.com/"><u>Flaticon</u></a>
+        </p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+</body>
+
+</html><!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+
+    <title>
+        Home Page
+    </title>
+</head>
+
+<body class="font-weight-bold">
+    <!--Header: Navbar_col [logo+title+toggle][navbar links]-->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-primary-custom mb-2 flex-column" id="mainNavbar">
+        <div class="d-flex align-items-center justify-content-center w-100">
+            <a class="navbar-brand d-flex align-items-center mb-0" href="index.html">
+                <img src="./clapperboard-64x64.png" alt="Film logo" class="mr-2">
+                <span class="h1 mb-0 text-white">Retro Video Rentals</span>
+            </a>
+
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarLinks"
+                aria-controls="navbarLinks" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+
+        <div class="collapse navbar-collapse w-100 mt-2 mt-sm-0" id="navbarLinks">
+            <ul class="navbar-nav w-100 justify-content-around text-center">
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="index.html"><i class="fa-solid fa-home mr-2"></i>Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="Movies.html"><i class="fa-solid fa-film mr-2"></i>Movies</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="customers.html"><i class="fa-solid fa-users mr-2"></i>Customers</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="rentals.html"><i class="fa-solid fa-calendar-check mr-2"></i>Rentals</a>
+                </li>
+            </ul>
+        </div>
+
+    </nav>
+
+    <!--Main page Contents -->
+    <main class="container-fluid px-4 my-0 d-flex flex-column flex-grow-1">
+        <div class="row my-2">
             
         </div>
-    </div>
+    </main>
+
+    <!--footer-->
+    <footer class="bg-dark-custom text-white text-center p-3 w-100">
+        <p class="mb-0">
+            Copyright &copy; Retro Movie Rentals 2026<br>
+            Movie icon created by <a href="https://www.flaticon.com/authors/freepik"><u>Freepik</u></a>
+            from <a href="https://www.flaticon.com/"><u>Flaticon</u></a>
+        </p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
