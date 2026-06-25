@@ -39,10 +39,12 @@
                     <a class="nav-link text-white" href="movies.html"><i class="fa-solid fa-film mr-2"></i>Movies</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="customers.html"><i class="fa-solid fa-users mr-2"></i>Customers</a>
+                    <a class="nav-link text-white" href="customers.html"><i
+                            class="fa-solid fa-users mr-2"></i>Customers</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="rentals.html"><i class="fa-solid fa-calendar-check mr-2"></i>Rentals</a>
+                    <a class="nav-link text-white" href="rentals.html"><i
+                            class="fa-solid fa-calendar-check mr-2"></i>Rentals</a>
                 </li>
             </ul>
         </div>
@@ -51,63 +53,110 @@
 
     <!--Main page Contents -->
     <main class="container-fluid px-4 my-0 d-flex flex-column flex-grow-1">
-        <div class="row my-2">
-            <div class="col">
-                <h2 class="bg-aqua-custom text-center p-2"><b>2026 Movie Rentals</b></h2>
-            </div>
+        <div class="row p-2">
+            <h2>Customers</h2>
+            <button type="button" class="btn btn-primary ml-auto">
+                <i class="fa-solid fa-plus"></i>
+                Add Customer
+            </button>
         </div>
 
-        <div class="row align-items-stretch">
-            <div class="col-12 col-sm-6 col-md-3 mb-3 d-flex">
-                <div class="card text-center bg-new-releases promo-card h-100 w-100">
-                    <i class="fa-solid fa-star text-primary fa-2x mt-3"></i>
-                    <div class="card-body">
-                        <h2 class="card-title">New Releases</h2>
-                        <p class="card-text text-danger font-weight-bold mb-0">$4.99</p>
-                        <p class="card-text mb-0">per rental</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-sm-6 col-md-3 mb-3 d-flex">
-                <div class="card text-center bg-classic-movies promo-card h-100 w-100">
-                    <i class="fa-solid fa-clapperboard fa-2x mt-3"></i>
-                    <div class="card-body">
-                        <h2 class="card-title">Classic Movies</h2>
-                        <p class="card-text text-danger font-weight-bold mb-0">$2.99</p>
-                        <p class="card-text mb-0">per rental</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-sm-6 col-md-3 mb-3 d-flex">
-                <div class="card text-center bg-family-night promo-card h-100 w-100">
-                    <i class="fa-solid fa-users fa-2x mt-3"></i>
-                    <div class="card-body">
-                        <h2 class="card-title">Family Night Bundle</h2>
-                        <p class="card-text mb-0">3 movies for</p>
-                        <p class="card-text text-danger font-weight-bold mb-0">$7.99</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-sm-6 col-md-3 mb-3 d-flex">
-                <div class="card text-center bg-late-fee promo-card h-100 w-100">
-                    <i class="fa-solid fa-clock fa-2x mt-3"></i>
-                    <div class="card-body">
-                        <h2 class="card-title">Late Fee</h2>
-                        <p class="card-text text-danger font-weight-bold mb-0">$1.00</p>
-                        <p class="card-text mb-0">per day</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <table class="table table-bordered text-center">
+            <thead class="table-primary">
+                <tr>
+                    <th scope="col">Name</th>
+                    <th scope="col">Email</th>
+                    <th scope="col" class="d-none d-sm-table-cell">Phone</th>
+                    <th scope="col">Membership</th>
+                    <th scope="col" class="d-none d-sm-table-cell"></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Maria Lopez</td>
+                    <td>maria@gmail.com</td>
+                    <td class="d-none d-sm-table-cell">323-555-1000</td>
+                    <!--Mobile-->
+                    <td>
+                        <div>Premium</div>
+                        <div class="d-sm-none mt-2">
+                            <button type="button" class="btn btn-primary btn-sm mr-2">Edit</button>
+                            <button type="button" class="btn btn-danger btn-sm">Delete</button>
+                        </div>
+                    </td>
+                    <!--Desktop-->
+                    <td class="d-none d-sm-table-cell">
+                        <div class="d-flex justify-content-center flex-wrap">
+                            <button type="button" class="btn btn-primary px-3 mr-2">Edit</button>
+                            <button type="button" class="btn btn-danger px-3">Delete</button>
+                        </div>
+                    </td>
+                </tr>
 
-        <div class="row mt-4 pb-3">
-            <div class="col text-center">
-                <button type="button" class="btn btn-success btn-lg px-5 py-3 h4 mb-0">
-                    <i class="fa-solid fa-ticket"></i>
-                    Rent now
-                </button>
-            </div>
-        </div>
+                <tr>
+                    <td>James Smith</td>
+                    <td>james@gmail.com</td>
+                    <td class="d-none d-sm-table-cell">626-555-1000</td>
+                    <!--Mobile-->
+                    <td>
+                        <div>Regular</div>
+                        <div class="d-sm-none mt-2">
+                            <button type="button" class="btn btn-primary btn-sm mr-2">Edit</button>
+                            <button type="button" class="btn btn-danger btn-sm">Delete</button>
+                        </div>
+                    </td>
+                    <!--Desktop-->
+                    <td class="d-none d-sm-table-cell">
+                        <div class="d-flex justify-content-center flex-wrap">
+                            <button type="button" class="btn btn-primary px-3 mr-2">Edit</button>
+                            <button type="button" class="btn btn-danger px-3">Delete</button>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Linda Chen</td>
+                    <td>linda@gmail.com</td>
+                    <td class="d-none d-sm-table-cell">213-555-1000</td>
+                    <!--Mobile-->
+                    <td>
+                        <div>student</div>
+                        <div class="d-sm-none mt-2">
+                            <button type="button" class="btn btn-primary btn-sm mr-2">Edit</button>
+                            <button type="button" class="btn btn-danger btn-sm">Delete</button>
+                        </div>
+                    </td>
+                    <!--Desktop-->
+                    <td class="d-none d-sm-table-cell">
+                        <div class="d-flex justify-content-center flex-wrap">
+                            <button type="button" class="btn btn-primary px-3 mr-2">Edit</button>
+                            <button type="button" class="btn btn-danger px-3">Delete</button>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Robert Brown</td>
+                    <td>robert@gmail.com</td>
+                    <td class="d-none d-sm-table-cell">815-555-1000</td>
+                    <!--Mobile-->
+                    <td>
+                        <div>Premium</div>
+                        <div class="d-sm-none mt-2">
+                            <button type="button" class="btn btn-primary btn-sm mr-2">Edit</button>
+                            <button type="button" class="btn btn-danger btn-sm">Delete</button>
+                        </div>
+                    </td>
+                    <!--Desktop-->
+                    <td class="d-none d-sm-table-cell">
+                        <div class="d-flex justify-content-center flex-wrap">
+                            <button type="button" class="btn btn-primary px-3 mr-2">Edit</button>
+                            <button type="button" class="btn btn-danger px-3">Delete</button>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
     </main>
 
     <!--footer-->
@@ -128,4 +177,4 @@
         crossorigin="anonymous"></script>
 </body>
 
-</html><!DOCTYPE html>
+</html>
